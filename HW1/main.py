@@ -72,10 +72,7 @@ def plot_pred(dv_set, model, device, lim=35., preds=None, targets=None):
 class COVID19Dataset(Dataset):
     ''' Dataset for loading and preprocessing the COVID19 dataset '''
 
-    def __init__(self,
-                 path,
-                 mode='train',
-                 target_only=False):
+    def __init__(self, path, mode='train', target_only=False):
         self.mode = mode
 
         # Read data into numpy arrays
